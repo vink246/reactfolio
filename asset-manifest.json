@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactfolio/static/css/main.f46facfd.css",
+    "main.js": "/reactfolio/static/js/main.9991b201.js",
+    "static/js/787.512dd3f2.chunk.js": "/reactfolio/static/js/787.512dd3f2.chunk.js",
+    "index.html": "/reactfolio/index.html",
+    "main.f46facfd.css.map": "/reactfolio/static/css/main.f46facfd.css.map",
+    "main.9991b201.js.map": "/reactfolio/static/js/main.9991b201.js.map",
+    "787.512dd3f2.chunk.js.map": "/reactfolio/static/js/787.512dd3f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f46facfd.css",
+    "static/js/main.9991b201.js"
+  ]
+}
