@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -7,7 +6,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "./styles/article.css";
 
 const Article = (props) => {
-	const { title, description, date, link } = props;
+	const { title, description, date, paperLink } = props;
 
 	return (
 		<React.Fragment>
@@ -21,13 +20,13 @@ const Article = (props) => {
 						{description}
 					</div>
 					<div className="homepage-article-link">
-						<Link to={link}>
-							Read article{" "}
+						<a href={paperLink} target="_blank" rel="noopener noreferrer">
+							Read paper{" "}
 							<FontAwesomeIcon
 								style={{ fontSize: "10px" }}
 								icon={faChevronRight}
 							/>
-						</Link>
+						</a>
 					</div>
 				</div>
 			</div>

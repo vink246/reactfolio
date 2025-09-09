@@ -1,0 +1,255 @@
+/* Project Detail Page Styles */
+.project-detail-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 4rem 2rem 0 2rem;
+}
+
+/* Back Button */
+.back-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	background: #f8f9fa;
+	border: 1px solid #dee2e6;
+	border-radius: 8px;
+	padding: 0.75rem 1.5rem;
+	margin-bottom: 2rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-size: 0.9rem;
+	color: #495057;
+}
+
+.back-button:hover {
+	background: #e9ecef;
+	border-color: #adb5bd;
+	transform: translateX(-2px);
+}
+
+/* Project Header */
+.project-detail-header {
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
+	margin-bottom: 3rem;
+	padding: 2rem;
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail-logo-large {
+	flex-shrink: 0;
+	width: 120px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f8f9fa;
+	border-radius: 12px;
+	border: 1px solid #e9ecef;
+}
+
+.project-detail-logo-large img {
+	width: 80px;
+	height: 80px;
+	object-fit: contain;
+}
+
+.project-detail-title-section {
+	flex: 1;
+}
+
+.project-detail-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #212529;
+	margin: 0 0 1rem 0;
+	line-height: 1.2;
+}
+
+.project-detail-status {
+	margin-bottom: 1rem;
+}
+
+.status-badge {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	font-size: 0.85rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.status-badge.in-progress {
+	background: #fff3cd;
+	color: #856404;
+	border: 1px solid #ffeaa7;
+}
+
+.status-badge.completed {
+	background: #d4edda;
+	color: #155724;
+	border: 1px solid #c3e6cb;
+}
+
+.project-detail-description {
+	font-size: 1.1rem;
+	color: #6c757d;
+	line-height: 1.6;
+	margin: 0;
+}
+
+/* Project Content */
+.project-detail-content {
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.project-detail-section {
+	padding: 2rem;
+	border-bottom: 1px solid #e9ecef;
+}
+
+.project-detail-section:last-child {
+	border-bottom: none;
+}
+
+.project-detail-section h2 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #212529;
+	margin: 0 0 1.5rem 0;
+}
+
+.project-detail-detailed-description {
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #495057;
+	margin: 0;
+}
+
+/* Technologies */
+.technologies-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+}
+
+.technology-tag {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background: #e3f2fd;
+	color: #1565c0;
+	border: 1px solid #bbdefb;
+	border-radius: 20px;
+	font-size: 0.9rem;
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.technology-tag:hover {
+	background: #bbdefb;
+	transform: translateY(-1px);
+}
+
+/* Project Images */
+.project-images-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1.5rem;
+	margin-top: 1rem;
+}
+
+.project-image-container {
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.project-image-container:hover {
+	transform: translateY(-4px);
+}
+
+.project-image {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	display: block;
+}
+
+/* GitHub Link */
+.github-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.75rem;
+	background: #24292e;
+	color: #ffffff;
+	padding: 1rem 1.5rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.github-link:hover {
+	background: #1a1e22;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(36, 41, 46, 0.3);
+}
+
+.github-link svg:last-child {
+	font-size: 0.8rem;
+	opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.project-detail-container {
+		padding: 0 1rem;
+	}
+	
+	.project-detail-header {
+		flex-direction: column;
+		text-align: center;
+		gap: 1.5rem;
+	}
+	
+	.project-detail-title {
+		font-size: 2rem;
+	}
+	
+	.project-detail-section {
+		padding: 1.5rem;
+	}
+	
+	.project-images-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.technologies-list {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.project-detail-title {
+		font-size: 1.75rem;
+	}
+	
+	.project-detail-logo-large {
+		width: 100px;
+		height: 100px;
+	}
+	
+	.project-detail-logo-large img {
+		width: 60px;
+		height: 60px;
+	}
+}

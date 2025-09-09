@@ -28,6 +28,13 @@ const SEO = [
 	},
 
 	{
+		page: "resume",
+		description:
+			"View and download Vineet Kulkarni's resume. Software engineer and robotics researcher with experience in machine learning, robotics, and aerospace engineering.",
+		keywords: ["Vineet Kulkarni", "resume", "cv", "software engineer", "robotics", "machine learning"],
+	},
+
+	{
 		page: "contact",
 		description:
 			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",

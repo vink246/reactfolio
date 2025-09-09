@@ -15,28 +15,28 @@ const Works = () => {
 					<div className="works-body">
 						<div className="work">
 							<img
-								src="./facebook.png"
-								alt="facebook"
+								src={`${process.env.PUBLIC_URL}/amazon.png`}
+								alt="amazon"
 								className="work-image"
 							/>
-							<div className="work-title">Facebook</div>
+							<div className="work-title">Amazon</div>
 							<div className="work-subtitle">
-								Software Engineer
+								SDE Intern
 							</div>
-							<div className="work-duration">2019 - Present</div>
+							<div className="work-duration">2025</div>
 						</div>
 
 						<div className="work">
 							<img
-								src="./twitter.png"
-								alt="twitter"
+								src={`${process.env.PUBLIC_URL}/gtri.png`}
+								alt="gtri"
 								className="work-image"
 							/>
-							<div className="work-title">Twitter</div>
+							<div className="work-title">Georgia Tech Research Institute</div>
 							<div className="work-subtitle">
-								Software Engineer
+								Research Intern
 							</div>
-							<div className="work-duration">2019 - Present</div>
+							<div className="work-duration">2024</div>
 						</div>
 					</div>
 				}
